@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERROR</title>
+    <style>
+    h1{
+        text-align: center;
+        font-size: 60px;
+        position: absolute;
+        margin-left: 45%;
+    }
+   h2{
+    text-align: center;
+    margin-left: 150px;
+    font-size: 20px;
+    line-height: 2px;
+    margin-top: 10%;
+    color: #ffffff;
+    font-family: arial;
+    white-space: nowrap;
+    position: absolute;
+   }
+    button{
+     margin-top: 101px;
+     margin-left: 380px ;
+     font-size: 20px;
+     font-family: bold;
+     font-weight: bold;
+     cursor: pointer;
+     background-color:beige;
+     border: #000000 1px solid;
+     color:#000000;
+     position: absolute;
+    }
+    button:hover{
+        color: #000000;
+        background-color:beige;
+        border: #ffffff;
+    }
+    button:active{
+        background-color: rgba(239, 239, 211, 0.678);
+        color: #000;
+        border: #000000;
+    }
+    .erro{
+    margin-left: 24%;
+    margin-top: 5%;
+    position: absolute;
+    }
+    #senha{
+       font-size: 20px;
+       font-family: arial;
+       font-weight: bold;
+       position: auto;
+       margin-top: 102px;
+    }
+    input{
+        margin-top: 100px;
+        font-size: 20px;
+        font-weight: bold;
+        border: black 2px solid;
+        position: absolute;
+    }
+    fieldset{
+    position: absolute;
+    height: 200px;
+    width: 40%;
+    margin-left: 29%;
+    margin-top: 15%;
+    background-color:#3575AD;
+    border: rgba(0, 0, 0, 0.773);
+    border: solid;
+    }
+    body{
+      background-color:rgb(245, 193, 202)
+    }
+    #res{
+      
+       font-weight: bold;
+       font-family: arial;
+       font-size: 30px;
+       margin-top: 23%;
+       position: absolute;
+       margin-left: 42%;
+       top: 10%;
+    }
+    img{
+        position: absolute;
+        position: auto;
+    }
+    label{
+        color: #ffffff;
+        margin-left: -70px;
+        position: absolute;
+    }
+    h3{
+        color: #ffffff;
+        position: absolute;
+        margin-left: 10%;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+       
+    }
+    @media screen and (max-width: 1468px){
+        h2{
+           margin-left: 50px;
+            
+        }
+    }
+    @media screen and (max-width: 1468px){
+        #senha{
+        
+           margin-left: -120px;
+        }
+    }
+    @media screen and (max-width: 1468px){
+        #codigo{
+        
+           margin-left: -50px;
+        }
+    }
+    @media screen and (max-width: 1468px){
+        #b1{
+        
+           margin-left: 330px;
+        }
+    }
+    @media screen and (max-width: 1468px){
+        #res{
+        
+           margin-top: 28%;
+           margin-left: 39%;
+        }
+    }
+    @media screen and (max-width: 730px){
+        h1{
+            margin-top: -1%;
+            margin-left: 38%;
+        }
+    }
+    @media screen and (max-width: 730px){
+        h2{
+            margin-top: 25%;
+            margin-left: 7%;
+            font-size: 23px;
+        }
+    }
+    @media screen and (max-width: 730px){
+        h3{
+            font-size: 32px;
+            margin-left: 20%;
+        }
+    }
+    @media screen and (max-width: 730px){
+        fieldset{
+            margin-left:10px ;
+            margin-top: 70%;
+            width: 90%;
+            height: 400px;
+        }
+    }
+    @media screen and (max-width: 730px){
+        #senha{
+            margin-top: 250px;
+            font-size: 25px;
+           
+        }
+    }
+    @media screen and (max-width: 730px){
+        #codigo{
+            margin-left: -30px;
+            margin-top: 250px;
+            font-size: 25px;
+           
+        }
+    }
+    @media screen and (max-width: 730px){
+        #b1{
+            margin-left: -30px;
+            margin-top: 290px;
+            width: 465px;
+           
+        }
+    }
+    @media screen and (max-width: 730px){
+        #res{
+            margin-left: 32%;
+            margin-top: 850px;
+           
+           
+        }
+    }
+    @media screen and (max-width: 730px){
+        #foto{
+           height:100px ;
+           width: 100px ;
+        }
+    }
+    </style>
+</head>
+    <body>
+    <h1>OPS!!!</h1>
+     <fieldset>
+        <img src="foto.png" id="foto" height="45" width="45"><h3>junior</h3>
+         <h2>infelizmente não foi possível se conectar com a rede 
+                <p>por falha no servidor por favor tente novamente.</p></h2>
+                    <div class="erro">
+                     <label for="Senha" id="senha">Senha:</label>
+                     <input type="password" id="codigo" placeholder="Digite a senha da sua rede" size="29"><button onclick="conectar()" id="b1">Conectar</button>
+                  </div>
+     </fieldset>  
+         <div id="res">Tente Novamente</div> 
+    </body>
+ <script>
+      function conectar() {
+        var name = document.getElementById("codigo")
+             if(name.value == "12345"){
+          res.innerHTML = "Obtendo endereço de IP...".bold()   
+             }else if(name.value == ""){
+          res.innerHTML = "[ERROR] Preencha local vazio".bold()
+             }else{
+          res.innerHTML = "Autenticando...".bold()
+             }
+          setTimeout(function(){
+             if(name.value == "12345"){
+             document.getElementById("res").innerHTML = "Conectado com Sucesso".bold(); 
+             }else{
+             document.getElementById("res").innerHTML = "Não foi possivel se Conectar".bold();
+         } 
+     }, 3000 );
+    }
+ </script>
+</html>
